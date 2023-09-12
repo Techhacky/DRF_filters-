@@ -34,9 +34,7 @@ class IntroductionViewSet(ModelViewSet):
 
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
-  class ModelDeleteView(DeleteView):
-        model = Model
-        template_name = ".html"
+
     
 
 
